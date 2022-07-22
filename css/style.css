@@ -1,0 +1,367 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Rock+Salt&display=swap');
+
+*{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;}
+
+    /*  --- INICIO --- */
+
+h1{  
+    color: black;
+    font-family: "Cookie", sans-serif;
+    font-size: 75px;
+    font-weight: lighter;
+    padding-top: 50px;
+    padding-left: 65px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+    text-align:center
+}
+
+h3{
+    color: #e46cc6;
+    background-color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 95px;
+    font-weight: lighter;
+    text-align:left;
+   
+}
+
+h4{
+    margin-top: 55px;
+    color: black;
+    font-size: x-large;
+    font-family:  "Cookie", sans-serif;
+    font-weight: lighter;
+}
+
+.iniciarS{ 
+    margin-left: 10px;
+    font-size:large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e46cc6;
+    font-size: 25px;
+    }
+
+.barraNav a{
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #e46cc6;
+}
+
+.fondoRosa{
+    background-image: url(../img/fondoRosa2.jpg)
+}
+
+.fotoSalon{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "salon1 salon2"
+    ;
+}
+
+.salon1:hover{
+    transform: translate(25px, 150px);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+
+}
+.salon2:hover{
+    transform: translate(25px, 150px);
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+@media (max-width:1024)  {
+    .fotoSalon{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "salon1 salon2"
+        ;
+    }
+}
+@media (max-width:768px){
+        .fotoSalon{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "salon1"
+            "salon2"
+        ;
+    }
+}
+@media (max-width:600px){
+    .fotoSalon{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "salon1"
+        "salon2"
+        ;
+
+    }
+
+}
+
+main{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center; 
+    background-attachment: fixed;
+    color: black;
+}
+
+.flex-container{
+    color: black;
+    list-style: none;
+    display:flex;
+    display: grid;
+    justify-content:center;
+    margin: 50px;
+    padding: 50px;
+    font-size: large;
+    font-weight: bold; 
+    font-family: "Raleway", sans-serif;
+}
+
+.cuidadodePiel{
+    font-size: 45px ;
+    color: black;
+   font-style: oblique;
+   margin-left: 50px;
+   font-family: "Raleway", sans-serif;
+
+}
+
+footer{
+    list-style: none;
+}
+
+/* --- CONTACTO --- */
+
+.novedades{
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 15px;
+    font-size: large;
+    color:#68A7AD;
+}
+.formulario{
+    text-align: center;
+    border-radius: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style:oblique;
+    font-weight: bolder;
+    font-size: large;
+    color:#68A7AD;
+
+}
+
+ .contacto{
+
+    color: #68A7AD;
+    font-style: oblique;
+    font-size:xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.mapaDatos{
+   display: flex;
+   justify-content: space-between;
+    margin: 50px;
+    padding: 50px;
+}
+.mapa{
+ margin: 50px;
+ 
+}
+.datos{
+    margin-top: 50px;
+    font-style: oblique;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    color: #68A7AD;
+}
+.condarco{
+    margin: 50px;
+}
+.mail{
+    margin: 50px;
+}
+.celular{
+    margin: 50px;
+}
+.historia{
+    margin-top: 50px;
+    font-family: "Cookie", sans-serif;
+    font-size: xx-large;
+    color: #68A7AD;
+}
+footer{
+    list-style: none;
+}
+
+
+/* --- NOSOTROS --- */
+
+.nosotros{
+margin: 50px;
+}
+footer{
+    list-style: none;
+}
+
+
+/*  --- TIENDA --- */
+
+footer{
+    list-style: none;
+}
+
+/*  --- ESCUELAS --- */
+
+h3{
+    font-size: x-large;
+    font-family: "Cookie", sans-serif;
+}
+.escuelas{
+    display:inline-block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    font-weight: lighter;
+    text-align: justify;
+    margin: 25px;
+    padding: 25px;
+
+}
+
+.ubicacionE{
+justify-content: center;
+background-color: #F9F8F8;
+float: left; 
+margin-right: 55px;
+margin-left: 75px;
+padding: 25px;
+}
+
+.escuelasFoto {
+    float: left;
+    max-width: 101%;
+    max-height: 5%;
+    padding: 1rem 1rem 1rem 1rem;
+}
+.devotoE{
+    font-size: xx-large;
+font-family: "Cookie", sans-serif;
+font-weight: bold;
+color: #e71d9a;
+
+}
+
+.boedoE{
+    font-size: xx-large;
+    font-family: "Cookie", sans-serif;
+font-weight: bold;
+color: #e71d9a;
+}
+
+footer{
+    list-style: none;
+}
+
+/* -- PELUQUERÍA-- */
+.gridContainer{
+margin: 0px auto;
+width: 100%;
+justify-items: center;
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: repeat(3);
+grid-template-areas: 
+"fotosPeluqueria1 fotosPeluqueria2" 
+"fotosPeluqueria3 fotosPeluqueria4"
+"fotosPeluqueria5 fotosPeluqueria6"
+;
+
+}
+
+.gridContainer1{
+    grid-area: fotosPeluqueria1;
+}
+.gridContainer2{
+    grid-area: fotosPeluqueria2;
+}
+.gridContainer3{
+    grid-area: fotosPeluqueria3;
+}
+.gridContainer4{
+    grid-area: fotosPeluqueria4;
+}
+.gridContainer5{
+    grid-area: fotosPeluqueria5;    
+}
+.gridContainer6{
+    grid-area: fotosPeluqueria4;
+}
+
+@media (max-width:1024)  {
+    .gridContainer1{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3);
+        grid-template-areas: 
+        "fotosPeluqueria1 fotosPeluqueria2" 
+        "fotosPeluqueria3 fotosPeluqueria4"
+        "fotosPeluqueria5 fotosPeluqueria6"
+        ;
+    }
+}
+@media (max-width:768px){
+    .gridContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "fotosPeluqueria1 "
+        "fotosPeluqueria2" 
+        "fotosPeluqueria3"
+        "fotosPeluqueria4"
+        "fotosPeluqueria5" 
+        "fotosPeluqueria6"
+        ;
+    }
+}
+@media (max-width:600px){
+    .gridContainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "fotosPeluqueria1 "
+        "fotosPeluqueria2" 
+        "fotosPeluqueria3"
+        "fotosPeluqueria4"
+        "fotosPeluqueria5" 
+        "fotosPeluqueria6"
+        ;
+
+    }
+
+}
