@@ -14,14 +14,41 @@
 <body>
     <header>
         <nav>
-            <ul class="barraNav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./contactos.html">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./peluqueria.html">Peluquería</a></li>
-                <li><a href="./escuelas.html">Escuelas</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">Inicio</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./contactos.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./peluqueria.html">Peluquería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./escuelas.html">Escuelas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Sucursales
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="Sucursales">
+                          <li><a class="dropdown-item" href="#">Sucursal 1</a></li>
+                          <li><a class="dropdown-item" href="#">Sucursal 2</a></li>
+                          <li><a class="dropdown-item" href="#">Sucursal 3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+          </nav>
     </header>
 
   </div>
