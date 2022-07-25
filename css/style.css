@@ -57,12 +57,6 @@ header nav ul li{
     font-size: 25px;
     }
 
-.barraNav a{
-    text-decoration: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #e46cc6;
-}
-
 .fondoRosa{
     background-image: url(../img/fondoRosa2.jpg)
 }
