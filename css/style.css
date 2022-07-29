@@ -1,10 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');;
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Raleway:wght@100&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap');
+
 
 *{
     margin: 1px;
@@ -14,138 +17,267 @@
     /*  --- INICIO --- */
 
 h1{  
-    color: black;
-    font-family: "Raleway" ;
-    font-size: 75px;
-    font-weight: bolder;
+    color: #5b40f36a;
+    font-family: "Tajawal" ;
+    font-size: 150px;
+    font-weight:bold ;
+    font-style: normal;
     padding-top: 50px;
     padding-left: 65px;
     padding-right: 45px;
     padding-bottom: 25px;
-    text-align:center
-}
+    text-align:center;
 
-h3{
-    color: #e46cc6;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 95px;
-    font-weight: lighter;
-    text-align: center;
-    
-   
 }
 
 h4{
-    margin-top: 55px;
+    margin-top: 30px;
     color: black;
     font-size: x-large;
-    font-family:  "Cookie", sans-serif;
-    font-weight: lighter;
+    font-family: "Tajawal" ;
+    font-weight: bolder;
     padding-bottom: 50px;
+    background-color: #f8f8f8;
 }
 
 .iniciarS{ 
-    margin-left: 10px;
+    
+    font-style:oblique;
+    text-align: left;
     font-size:large;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.pantalla{
+    background-image:url(../img/fondo.jpg);
+    
+}
 
-header nav ul li{
-    display: inline-block;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #e46cc6;
-    font-size: 25px;
-    }
+    @media screen and (max-width: 600px){
+        .h1{
+        font-size:12px;
+        }
+        .h4{
+        font-size:18px;
+        }
+        }
 
-.fotoSalon{
+.gallery{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3em;
+    padding-top: 1em;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "salon1 salon2"
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 160px ;
+    grid-template-areas:
+    " img1 img1 img2 img4"
+    " img1 img1 img4 img4"
+    " img5 img5 img6 img7"
+    " img5 img5 img7 img8"
+    ;
+    gap: .8em;
+}
+
+.gallery__picture{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery__picture:hover::before{
+    content: "Nuevo Destino";
+    position: absolute;
+    justify-content: center;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: #5b40f36a;
+    transform: scale(0);
+    transition: transform .4s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 15%;
+}
+
+.gallery__picture:hover::before{
+    transform: scale(1) rotate(360deg);
+    border-radius: 15%;
+}
+
+.gallery__picture--g1{
+    grid-area: img1;
+}
+
+.gallery__picture--g2{
+    grid-area: img2;
+}
+
+.gallery__picture--g3{
+    grid-area: img3;
+}
+
+.gallery__picture--g4{
+    grid-area: img4;
+}
+
+.gallery__picture--g5{
+    grid-area: img5;
+}
+.gallery__picture--g6{
+    grid-area: img6;
+}
+.gallery__picture--g7{
+    grid-area: img7;
+}
+.gallery__picture--g8{
+    grid-area: img8;
+}
+.gallery__img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width:1024) { 
+    
+    .gallery{
+    grid-template-areas:
+    "img1 img1 img1"
+    "img2 img2 img2"
+    "img3 img3 img3"
+    "img4 img4 img4"
+    "img5 img5 img5"
+    "img6 img6 img6"
+    "img7 img7 img7"
+    "img8 img8 img8"
+    ;
+}
+;
+}
+
+@media (max-width:768px){
+    .gallery__picture:hover::before{
+        font-size: 1rem;
+    }
+.gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img4"
+    "img5 img5"
+    "img5 img5"
+    "img6 img7"
+    "img8 img8"
     ;
 }
 
-.salon1:hover{
-    transform: translate(25px, 150px);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-
-}
-.salon2:hover{
-    transform: translate(25px, 150px);
-    transition-property: all;
-    transition-duration: 0.5s;
-    transition-timing-function: linear;
-}
-
-@media (max-width:1024)  {
-    .fotoSalon{
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "salon1 salon2"
-        ;
     }
-}
-@media (max-width:768px){
-        .fotoSalon{
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            grid-template-areas: 
-            "salon1"
-            "salon2"
-        ;
-    }
-}
+
 @media (max-width:600px){
-    .fotoSalon{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "salon1"
-        "salon2"
-        ;
-
+    .gallery__picture:hover::before{
+        font-size: 1rem;
     }
-
+.gallery{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: none
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img4"
+    "img5 img5"
+    "img5 img5"
+    "img6 img7"
+    "img8 img8"
+    ;
+}
 }
 
-main{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+/* --- ACTIVIDADES --- */
+
+.diversion{
+    font-family: 'Poppins', sans-serif; ;
+}
+
+.bodycards{
+    background-color: #fff;
+    height: 100hv;
+    display: grid;
+    place-items: center center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax (400px,1fr));
+padding: 20px;
+grid-gap: 40px;
+}
+
+.card{
+    background-color: #5b40f36a;
+    border-radius: 20px ;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+}
+
+.h3card{
+    color: aliceblue;
+    font-size: xx-large;
+    padding: 30px;
+    font-family: "Tajawal";
+    font-weight: bolder;
+}
+
+.container{
+    position: relative ;
+    clip-path: polygon(0 ,100% 0,100% 85% 0 100%);
+}   
+
+.imgcard{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.pcard{
+    font-family: "Tajawal" sans-serif;
+    font-size: large;
+    color: #f8f8f8;
+}
+
+.form-label{
+    font-size: larger;
+    font-family: "Tajawal" sans-serif;
+    font-weight: bolder;
+    color: white;
+
+}
+.form-control{
+    justify-items: center;
+}
+.buscador{
+    font-family: "Tajawal";
     text-align: center; 
     background-attachment: fixed;
     color: black;
 }
 
-.flex-container{
-    color: black;
-    list-style: none;
-    display:flex;
-    display: grid;
-    justify-content:center;
-    margin: 50px;
-    padding: 50px;
-    font-size: large;
-    font-weight: bold; 
-    font-family: "Raleway", sans-serif;
-}
-
 .cuidadodePiel{
     margin-top: 50px;
-    font-size: large;
+    font-size: x-large;
     color: black;
    font-style: oblique;
    margin-left: 50px;
-   font-family: "Raleway", sans-serif;
+   font-family: "Tajawal";
 
 }
 
-footer{
-    list-style: none;
-}
 
 /* --- CONTACTO --- */
 
@@ -209,35 +341,50 @@ footer{
     font-size: xx-large;
     color: #68A7AD;
 }
-footer{
-    list-style: none;
-}
-
-
-/* --- NOSOTROS --- */
 
 .nosotros{
 margin: 50px;
 }
-footer{
-    list-style: "conforta";
+
+.header-card{
+    border-radius: 15px;
+}
+
+img{
+    max-width: 100%;
+}
+
+ article.card{
+max-width: 350px;
+background: #f8f8f8;
+border-radius: 8px;
+margin: 1rem;
+box-shadow: 0 0 12px #d7d7d7;
+ }
+.header-card img{
+    border-radius: 8px 8 px 0 0;
+    max-height: 200px;
+    height: 200px;
+    width: 100%;
+} 
+.categoria-card{
+    margin-top: 1rem;  
 }
 
 
-/*  --- TIENDA --- */
-
-footer{
-    list-style: none;
+.img-perfil-card img{
+    width: 50px;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: 50%;
 }
+.text-perfil-card{
+    display: flex;
+    flex-flow: column;
+}
+.card-wrap{
+    display: flex;
+    flex-flow: wrap;
 
-/*  --- ESCUELAS --- */
-
-.escuelas{
-  font-family: "Raleway" ;
-  font-size: large;
-  color: black;
-  font-style: oblique;
-  font-weight: bolder;
 }
 
 h3{
@@ -246,12 +393,17 @@ h3{
     font-family: "Cookie", sans-serif;
 }
 
+.card-title{
+    font-family: "Tajawal";
+    font-weight: bold;
+    font-size: x-large;
+    color: #5b40f36a;
+}
 
 footer{
     list-style: none;
 }
 
-/* -- PELUQUERÍA-- */
 .gridContainer{
 margin: 0px auto;
 width: 100%;
