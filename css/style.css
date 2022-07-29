@@ -19,7 +19,7 @@
 h1{  
     color: #5b40f36a;
     font-family: "Tajawal" ;
-    font-size: 150px;
+    font-size: 200px calc(1em + 1vw);
     font-weight:bold ;
     font-style: normal;
     padding-top: 50px;
