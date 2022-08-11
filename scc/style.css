@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&family=Raleway:wght@100&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap");
+ul li {
+  font-size: large;
+  font-weight: bolder;
+}
+
+* {
+  margin: 1px;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+/*  --- INICIO --- */
+h1 {
+  color: rgba(91, 64, 243, 0.4156862745);
+  font-family: "Tajawal";
+  font-size: 200px calc(1em + 1vw);
+  font-weight: bold;
+  font-style: normal;
+  padding-top: 50px;
+  padding-left: 65px;
+  padding-right: 45px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+h4 {
+  margin-top: 30px;
+  color: black;
+  font-size: x-large;
+  font-family: "Tajawal";
+  font-weight: bolder;
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+}
+
+.iniciarS {
+  font-style: oblique;
+  text-align: left;
+  font-size: large;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.pantalla {
+  background-image: url(../img/fondo.jpg);
+}
+
+@media screen and (max-width: 600px) {
+  .h1 {
+    font-size: 12px;
+  }
+  .h4 {
+    font-size: 18px;
+  }
+}
+.gallery {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 3em;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 160px;
+  grid-template-areas: " img1 img1 img2 img4" " img1 img1 img4 img4" " img5 img5 img6 img7" " img5 img5 img7 img8";
+  gap: 0.8em;
+}
+
+.gallery__picture {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery__picture:hover::before {
+  content: "Nuevo Destino";
+  position: absolute;
+  justify-content: center;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  background-color: rgba(91, 64, 243, 0.4156862745);
+  transform: scale(0);
+  transition: transform 0.4s;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 15%;
+}
+
+.gallery__picture:hover::before {
+  transform: scale(1) rotate(360deg);
+  border-radius: 15%;
+}
+
+.gallery__picture--g1 {
+  grid-area: img1;
+}
+
+.gallery__picture--g2 {
+  grid-area: img2;
+}
+
+.gallery__picture--g3 {
+  grid-area: img3;
+}
+
+.gallery__picture--g4 {
+  grid-area: img4;
+}
+
+.gallery__picture--g5 {
+  grid-area: img5;
+}
+
+.gallery__picture--g6 {
+  grid-area: img6;
+}
+
+.gallery__picture--g7 {
+  grid-area: img7;
+}
+
+.gallery__picture--g8 {
+  grid-area: img8;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024) {
+  .gallery {
+    grid-template-areas: "img1 img1 img1" "img2 img2 img2" "img3 img3 img3" "img4 img4 img4" "img5 img5 img5" "img6 img6 img6" "img7 img7 img7" "img8 img8 img8";
+  }
+}
+@media (max-width: 768px) {
+  .gallery__picture:hover::before {
+    font-size: 1rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img5 img5" "img5 img5" "img6 img7" "img8 img8";
+  }
+}
+@media (max-width: 600px) {
+  .gallery__picture:hover::before {
+    font-size: 1rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: none "img1 img1" "img1 img1" "img2 img3" "img4 img4" "img5 img5" "img5 img5" "img6 img7" "img8 img8";
+  }
+}
+/* --- ACTIVIDADES --- */
+.diversion {
+  font-family: "Poppins", sans-serif;
+}
+
+.bodycards {
+  background-color: #fff;
+  height: 100hv;
+  display: grid;
+  place-items: center center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax 400px, 1fr);
+  padding: 20px;
+  grid-gap: 40px;
+}
+
+.card {
+  background-color: rgba(91, 64, 243, 0.4156862745);
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 50px;
+}
+
+.h3card, h1 {
+  color: aliceblue;
+  font-size: xx-large;
+  padding: 30px;
+  font-family: "Tajawal";
+  font-weight: bolder;
+}
+
+.container {
+  position: relative;
+  clip-path: polygon(0, 100% 0, 100% 85% 0 100%);
+}
+
+.imgcard {
+  width: 100%;
+  display: block;
+  border-radius: 20px 20px 0 0;
+}
+
+.pcard {
+  font-family: "Tajawal" sans-serif;
+  font-size: large;
+  color: #f8f8f8;
+}
+
+.form-label {
+  font-size: larger;
+  font-family: "Tajawal" sans-serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.form-control {
+  justify-items: center;
+}
+
+.buscador {
+  font-family: "Tajawal";
+  text-align: center;
+  background-attachment: fixed;
+  color: black;
+}
+
+/* --- CONTACTO --- */
+.novedades {
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 15px;
+  font-size: large;
+  color: #68A7AD;
+}
+
+.formulario {
+  text-align: center;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: large;
+  color: #68A7AD;
+}
+
+.mapaDatos {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  padding: 50px;
+}
+
+.mapa {
+  margin: 50px;
+}
+
+.datos {
+  margin-top: 50px;
+  font-style: oblique;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  color: #68A7AD;
+}
+
+.condarco {
+  margin: 50px;
+}
+
+.mail {
+  margin: 50px;
+}
+
+.celular {
+  margin: 50px;
+}
+
+.historia {
+  margin-top: 50px;
+  font-family: "Cookie", sans-serif;
+  font-size: xx-large;
+  color: #68A7AD;
+}
+
+
+.header-card {
+  border-radius: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+article.card {
+  max-width: 350px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin: 1rem;
+  box-shadow: 0 0 12px #d7d7d7;
+}
+
+.header-card img {
+  border-radius: 8px 8 px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card {
+  margin-top: 1rem;
+}
+
+.img-perfil-card img {
+  width: 50px;
+  margin: 1rem 1rem 1rem 0;
+  border-radius: 50%;
+}
+
+.text-perfil-card {
+  display: flex;
+  flex-flow: column;
+}
+
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+}
+
+h3 {
+  text-align: center;
+  font-size: x-large;
+  font-family: "Cookie", sans-serif;
+}
+
+.card-title {
+  font-family: "Tajawal";
+  font-weight: bold;
+  font-size: x-large;
+  color: rgba(91, 64, 243, 0.4156862745);
+}
+
+.gridContainer {
+  margin: 0px auto;
+  width: 100%;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(3);
+  grid-template-areas: "fotosPeluqueria1 fotosPeluqueria2" "fotosPeluqueria3 fotosPeluqueria4" "fotosPeluqueria5 fotosPeluqueria6";
+}
+
+.gridContainer1 {
+  grid-area: fotosPeluqueria1;
+}
+
+.gridContainer2 {
+  grid-area: fotosPeluqueria2;
+}
+
+.gridContainer3 {
+  grid-area: fotosPeluqueria3;
+}
+
+.gridContainer4 {
+  grid-area: fotosPeluqueria4;
+}
+
+.gridContainer5 {
+  grid-area: fotosPeluqueria5;
+}
+
+.gridContainer6 {
+  grid-area: fotosPeluqueria4;
+}
+
+@media (max-width: 1024) {
+  .gridContainer1 {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3);
+    grid-template-areas: "fotosPeluqueria1 fotosPeluqueria2" "fotosPeluqueria3 fotosPeluqueria4" "fotosPeluqueria5 fotosPeluqueria6";
+  }
+}
+@media (max-width: 768px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fotosPeluqueria1 " "fotosPeluqueria2" "fotosPeluqueria3" "fotosPeluqueria4" "fotosPeluqueria5" "fotosPeluqueria6";
+  }
+}
+@media (max-width: 600px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "fotosPeluqueria1 " "fotosPeluqueria2" "fotosPeluqueria3" "fotosPeluqueria4" "fotosPeluqueria5" "fotosPeluqueria6";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
