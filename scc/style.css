@@ -289,61 +289,6 @@ h3 {
   color: rgba(91, 64, 243, 0.4156862745);
 }
 
-.gridContainer {
-  margin: 0px auto;
-  width: 100%;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(3);
-  grid-template-areas: "fotosPeluqueria1 fotosPeluqueria2" "fotosPeluqueria3 fotosPeluqueria4" "fotosPeluqueria5 fotosPeluqueria6";
-}
-
-.gridContainer1 {
-  grid-area: fotosPeluqueria1;
-}
-
-.gridContainer2 {
-  grid-area: fotosPeluqueria2;
-}
-
-.gridContainer3 {
-  grid-area: fotosPeluqueria3;
-}
-
-.gridContainer4 {
-  grid-area: fotosPeluqueria4;
-}
-
-.gridContainer5 {
-  grid-area: fotosPeluqueria5;
-}
-
-.gridContainer6 {
-  grid-area: fotosPeluqueria4;
-}
-
-@media (max-width: 1024) {
-  .gridContainer1 {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3);
-    grid-template-areas: "fotosPeluqueria1 fotosPeluqueria2" "fotosPeluqueria3 fotosPeluqueria4" "fotosPeluqueria5 fotosPeluqueria6";
-  }
-}
-@media (max-width: 768px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "fotosPeluqueria1 " "fotosPeluqueria2" "fotosPeluqueria3" "fotosPeluqueria4" "fotosPeluqueria5" "fotosPeluqueria6";
-  }
-}
-@media (max-width: 600px) {
-  .gridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "fotosPeluqueria1 " "fotosPeluqueria2" "fotosPeluqueria3" "fotosPeluqueria4" "fotosPeluqueria5" "fotosPeluqueria6";
-  }
-}
 
 .pie-pagina{
   text-align: center;
