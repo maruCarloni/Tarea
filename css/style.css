@@ -19,6 +19,8 @@ ul li {
 }
 
 /*  --- INICIO --- */
+
+
 h1 {
   color: rgba(91, 64, 243, 0.4156862745);
   font-family: "Tajawal";
@@ -81,21 +83,21 @@ h4 {
 }
 
 .gallery__picture:hover::before {
-  content: "";
-  position: absolute;
+  content: "Nuevo Destino";
+  position:relative;
   justify-content: center;
   top: 0%;
   bottom: 0%;
   left: 0%;
   right: 0%;
-  background-color: rgba(91, 64, 243, 0.4156862745);
+
   transform: scale(0);
   transition: transform 0.4s;
   color: #fff;
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  border-radius: 20%;
+
 }
 
 .gallery__picture:hover::before {
@@ -423,4 +425,8 @@ footer{
   color: #fff;
 }
 
+.envianos{
+  color:#F7ECDE; 
+ font-weight: bolder;
+}
 /*# sourceMappingURL=style.css.map */
